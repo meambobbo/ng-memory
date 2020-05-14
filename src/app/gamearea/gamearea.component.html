@@ -1,0 +1,23 @@
+<!-- game area -->
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1">
+                <!-- here is the entire scope for our game and the angular js controller -->
+                <div class="gamearea">
+                    <!-- # of attempts and timer -->
+                    <div class="row">
+                        <app-attempts></app-attempts>
+                        <app-timer></app-timer>
+                    </div>
+                    <!-- message to user -->
+                    <app-messagearea></app-messagearea>
+
+                    <!-- give up (show answers) and reset buttons -->
+                    <div class="row">
+                        <app-giveup-button></app-giveup-button>
+                        <app-reset-button></app-reset-button>
+                    </div>
+
+                    <app-tilearea></app-tilearea>
+                </div>
+            </div>
+        </div>

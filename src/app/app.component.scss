@@ -1,0 +1,168 @@
+/*
+ Copyright (c) 2016, Robert Gaffney
+ All rights reserved.
+ Licensed under New BSD 2-clause license. 
+*/
+
+@font-face {
+    font-family: "pretendo";
+    src: url(../assets/my-fonts/pretendo.otf) format('opentype');
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-image: url(../assets/footer_lodyas.png);
+    background-repeat: repeat;
+}
+
+span {
+    font-style: italic;
+}
+
+div#content {
+    //background-color:#DDD;
+    padding-bottom: 50px;
+    background-image: url(../assets/congruent_pentagon.png);
+    background-repeat: repeat;
+}
+
+div.titleBox {
+    margin-top: 10px;
+    border-radius: 90px;
+    background-color: #FFF;
+    border-color: #F00;
+    border-style: solid;
+    border-width: 8px;
+    color: #F00;
+    font-family: pretendo, 'Segoe UI';
+    display: inline-block;
+}
+
+.title {
+    padding-top: 5px;
+    padding-bottom: 2px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: pretendo, 'Segoe UI';
+}
+
+span.presents {
+    font-style: normal;
+    font-family: pretendo,'Segoe Script';
+}
+
+div.subtitle {
+    margin-top: 10px;
+    background-color: rgba(80,80,80,.4);
+    color: #FFF;
+    text-shadow: 2px 2px 2px #000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+h2.subtitle, h3.subtitle {
+    padding: 0px;
+    margin: 0px;
+}
+
+div.softBox {
+    border-radius: 10px;
+    background-color: #CDF;
+    border-color: #444;
+    border-style: solid;
+    border-width: 2px;
+    padding: 15px;
+    box-shadow: #333 -2px -2px inset;
+}
+
+div.gamearea {
+    background-image: url(../assets/swirl_pattern.png);
+    background-repeat: repeat;
+    border-radius: 5px;
+    background-color: #FDC;
+    border-color: #444;
+    border-style: solid;
+    border-width: 2px;
+    padding: 15px;
+}
+
+div.messagebox {
+    background-repeat: repeat;
+    border-radius: 5px;
+    background-color: #FFF;
+    border-color: #333;
+    border-style: solid;
+    border-width: 2px;
+    padding: 5px;
+    margin: 5px;
+    margin-bottom: 15px;
+}
+
+div.attempts {
+    text-align: right;
+    float: right;
+    font-size: .9em;
+}
+
+button.myButton {
+    box-shadow: 2px 2px 3px #333;
+    width: 100%;
+}
+
+div.swirl {
+    background-image: url(../assets/swirl_pattern.png);
+    background-repeat: repeat;
+}
+
+div.tile {
+    margin: auto;
+    margin-top: 10px;
+    width: 60px;
+}
+
+    div.tile .myButton {
+        border-color: #444;
+        border-style: solid;
+        border-width: 3px;
+        border-radius: 5px;
+    }
+
+        div.tile .myButton:hover {
+            background-color: #BBB;
+        }
+
+    div.tile.exposedOneSelected form .myButton {
+        border-color: #00B;
+        border-width: 3px;
+        border-radius: 5px;
+    }
+
+    div.tile.exposedNoMatch form .myButton {
+        border-color: #B00;
+        border-width: 3px;
+        border-radius: 5px;
+    }
+
+    div.tile.exposedMatch .myButton {
+        border-color: #0B0;
+        border-width: 3px;
+        border-radius: 5px;
+    }
+
+    div.tile.exposedA .myButton:hover, div.tile.exposedB .myButton:hover {
+        background-color: inherit;
+    }
+
+    div.high-scores {
+        background-color:white;
+        border:2px solid #333;
+        border-radius:3px;
+        margin-top:15px;
+        padding:10px;
+    }
