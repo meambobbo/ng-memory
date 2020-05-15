@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Messages } from './messages';
 
 @Component({
   selector: 'app-messagearea',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MessageareaComponent implements OnInit {
 
-  constructor() { }
+  message: string;
+
+  constructor() {
+    this.message = Messages.welcome;
+  }
 
   ngOnInit(): void {
+    this.message = Messages.welcome;
+    //todo subscribe to message service
+  }
+
+  ngOnDestroy(): void {
+    //todo unsub
   }
 
 }

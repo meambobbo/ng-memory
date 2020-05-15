@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TimerComponent implements OnInit {
 
+  timeString: string;
+
   constructor() { }
 
   ngOnInit(): void {
+    this.timeString = "--";
+    //todo subscribe to timer service
+  }
+
+  ngOnDestroy(): void {
+    //todo unsub from timer service
   }
 
 }
