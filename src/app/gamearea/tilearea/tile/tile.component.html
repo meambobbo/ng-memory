@@ -1,1 +1,15 @@
-<p>tile works!</p>
+<!-- depending on whether the tile is already matched, make an active button in a form or just a button appearance -->
+                            <div ng-switch on="matched">
+                                <div ng-switch-when="true">
+                                    <div class="tile exposed {{exposed}}">
+                                        <button class="btn btn-lg myButton"><i class="glyphicon {{icon}}"></i></button>
+                                    </div>
+                                </div>
+                                <div ng-switch-default>
+                                    <div class="tile exposed {{exposed}}">
+                                        <form ng-submit="onClick()">
+                                            <button class="btn btn-lg myButton" type="submit"><i class="glyphicon {{icon}}"></i></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
