@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AttemptsComponent implements OnInit {
 
-  constructor() { }
+  attempts: number;
+
+  constructor() { 
+  	this.attempts = 0;
+  }
 
   ngOnInit(): void {
+    this.attempts = 0;
+
+    //todo - subscribe to service
+  }
+
+  ngOnDestroy(): void {
+    // unsubscribe
   }
 
 }
